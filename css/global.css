@@ -1,0 +1,48 @@
+/* Variáveis */
+:root {
+    /*Cores*/
+    --brand-green: #00856F;
+    --brand-green-: #DCE9E2;
+    --brand-green-light-02: #F7F9F9;
+    --brand-beige: #FFFAF1;
+
+    --brand-green-hover: #00453A;
+
+    --gray-headline: #061800;
+    --gray-paragraph: #384633;
+    --white: #3E3E3E;
+
+
+    --font-text: "DM Sans", sans-serif;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

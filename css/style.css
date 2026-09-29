@@ -1,0 +1,91 @@
+/* Header normal */
+
+.header {
+  height: 64px;
+  padding: 0 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #008f7a;
+}
+
+.logo {
+  color: white;
+  font-size: 18px;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+.menu-button,
+.close-button {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+/* Menu mobile */
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: #008f7a;
+
+  /* Começa escondido */
+  transform: translateX(100%);
+
+  transition: transform 0.3s ease;
+
+  z-index: 1000;
+}
+
+
+/* Quando o menu estiver aberto */
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+
+/* Cabeçalho do menu */
+
+.mobile-menu-header {
+  height: 64px;
+  padding: 0 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Links */
+
+.mobile-menu ul {
+  list-style: none;
+
+  margin: 40px 0 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
